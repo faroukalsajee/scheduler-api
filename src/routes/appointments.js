@@ -6,6 +6,7 @@ module.exports = (db, updateAppointment) => {
       `
       SELECT
         appointments.id,
+        
         appointments.time,
         CASE WHEN interviews.id IS NULL
         THEN NULL
